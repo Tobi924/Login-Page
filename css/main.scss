@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Poppings', sans-serif;
+    margin: 1.5em;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 3px rgb(196, 196, 196);
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    color: #636364;
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+
+}
+
+.text-fields {
+    margin-top: 2.5em;
+    margin-bottom: 0em;
+    text-align: center;
+
+    p {
+        margin: 0.4em 0 1.5em 0;
+        padding: 0 0 0 0;
+    }
+
+    label {
+        font-weight: 600;
+        font-size: 1rem;
+        display: block;
+        text-align: left;
+        margin-left: 13%;
+    }
+
+    input[type=text] {
+        border: 1px solid #C4C4C4;
+        padding: 1em;
+        box-sizing: border-box;
+        border-radius: 0.8em;
+        width: 75%;
+    }
+
+    ::placeholder {
+        color: #636364;
+        font-size: 0.8rem;
+    }
+}
+
+.options {
+    display: flex;
+
+    .opt-left {
+        flex: 1;
+        margin-left: 12%;
+        label {
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-top: 0em;
+            text-align: left;
+        }
+    
+        input {
+            margin-top: 0em;
+            text-align: left;
+        }
+    }
+
+    .opt-right {
+        margin-right: 13%;
+        a {
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-decoration: none;
+            color: black;
+            text-align: right;
+        }
+
+        a:hover {
+            color: #EA454C;
+        }
+    }
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 2em;
+    input[type=button] {
+        background-color: #EA454C;
+        border: none;
+        width: 75%;
+        color: white;
+        padding: 0.802em 0;
+        border-radius: .6em;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    input[type=button]:hover {
+        background-color: #c0383f;
+    }
+
+    button {
+        background-color: white;
+        border: 1px solid #C4C4C4;
+        width: 75%;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem;
+        padding: 0.586em 0;
+        border-radius: .6em;
+        cursor: pointer;
+
+        span {
+            position: relative;
+            bottom: 0.4em;
+        }
+
+        img {
+            position: relative;
+            top: 0.2em;
+            padding: 0em;
+            margin: 0em;
+            width: 1.85em;
+        }
+    }
+
+    button:hover {
+        background-color: #C4C4C4;
+    }
+}
+
+.signup {
+    margin-top: 1em;
+    p {
+        color: #595959;
+        font-weight: 400;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: #EA454C;
+    }
+
+    a:hover {
+        color: #c0383f;
+    }
+}
+
+.picture {
+    margin: 5em 0 0 0;
+    padding: 0;
+    animation: picdown 1s ease-in-out forwards;
+
+    img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    body {
+        height: 100vh;
+        margin: 0 0 0 0;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .content {
+        margin-top: 3em;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .picture {
+        margin: 0 0 0 0;
+        padding: 0;
+        animation: picdown 1.5s ease-in-out forwards;
+
+    
+        img {
+           display: none;
+        }
+        background: url(../images/title.png);
+        background-size: cover;
+    }
+}
+
+@keyframes picdown {
+    from {
+        transform: translateY(60em);
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
